@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>DORCHIC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Estilos y fuentes -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Fuente y scroll suave */
+    body, h1, h2, h3, p {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+    }
+
+    /* Barra de categorías */
+    .category-bar {
+    background-color: #3A2E27;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .category-bar a {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: white !important;
+      padding: 14px 20px;
+    }
+
+    .category-bar a:hover {
+    background-color: #A38274 !important;
+    color: white !important;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: white;
+      padding: 40px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #8e44ad;
+      font-size: 48px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+
+    /* Carrusel */
+    .carousel img {
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Tarjetas */
+    .jewelry-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .jewelry-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .jewelry-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .jewelry-card .w3-container {
+      padding: 16px;
+    }
+
+    .jewelry-card h5 {
+      margin: 0 0 8px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .jewelry-card p {
+      margin: 0;
+      color: #777;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 24px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #8e44ad;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="w3-light-grey">
+
+<!-- NAVBAR -->
+<div class="w3-bar w3-black category-bar w3-center">
+  <a href="#anillos" class="w3-bar-item w3-button w3-hover-purple">Aretes</a>
+  <a href="#collares" class="w3-bar-item w3-button w3-hover-purple">Earcuff</a>
+  <a href="#pulseras" class="w3-bar-item w3-button w3-hover-purple">Anillos</a>
+  <a href="#relojes" class="w3-bar-item w3-button w3-hover-purple">NEW COLLECTION</a>
+</div>
+
+<!-- ENCABEZADO -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1 class="w3-xxxlarge w3-animate-top">DORCHIC</h1>
+  <p class="w3-large">No busques la luz cuando el sol eres tú</p>
+</header>
+
+<!-- CARRUSEL -->
+<div class="w3-content w3-display-container w3-margin-bottom carousel" style="max-width:1000px">
+  <img class="mySlides" src="recursos imagenes/IMG_9358.jpg" style="width:100%">
+  <img class="mySlides" src="recursos imagenes/IMG_9357.jpg" style="width:100%">
+  <img class="mySlides" src="recursos imagenes/IMG_9356.jpg" style="width:100%">
+  <img class="mySlides" src="recursos imagenes/IMG_9360.jpg" style="width:100%">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<!-- GALERÍA: ANILLOS -->
+<div id="anillos" class="w3-row-padding w3-margin-top">
+  <h2 class="w3-center">Aretes Topitos</h2>
+  <div class="w3-third w3-container w3-margin-bottom w3-animate-left">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9070.jpg" alt="Anillo de Oro">
+      <div class="w3-container">
+        <h5>Cadena Flor</h5>
+        <p>Cadena rodio flor clásica</p>
+      </div>
+    </div>
+  </div> 
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-left">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9117.jpg" alt="Anillo de Oro">
+      <div class="w3-container">
+        <h5>Cadena Flor</h5>
+        <p>Cadena rodio flor clásica</p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-left">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9378.jpg" alt="Anillo de Oro">
+      <div class="w3-container">
+        <h5>Cadena Flor</h5>
+        <p>Cadena rodio flor clásica</p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+
+<!-- GALERÍA: COLLARES -->
+<div id="collares" class="w3-row-padding w3-margin-top">
+  <h2 class="w3-center">Earcuff</h2>
+  <div class="w3-third w3-container w3-margin-bottom w3-animate-top">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9379.jpg" alt="Collar de Perlas">
+      <div class="w3-container">
+        <h5>Cadena Corazón</h5>
+        <p>Cadena rodio pepitas circón corazón </p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-top">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9379.jpg" alt="Collar de Perlas">
+      <div class="w3-container">
+        <h5>Cadena Corazón</h5>
+        <p>Cadena rodio pepitas circón corazón </p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-top">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9379.jpg" alt="Collar de Perlas">
+      <div class="w3-container">
+        <h5>Cadena Corazón</h5>
+        <p>Cadena rodio pepitas circón corazón </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALERÍA: PULSERAS -->
+<div id="pulseras" class="w3-row-padding w3-margin-top">
+  <h2 class="w3-center">Anillos</h2>
+  <div class="w3-third w3-container w3-margin-bottom w3-animate-bottom">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9381.jpg" alt="Pulsera de Plata">
+      <div class="w3-container">
+        <h5>Cadena Cereza</h5>
+        <p>Cadena rodio pepitas circón cereza</p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-bottom">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9381.jpg" alt="Pulsera de Plata">
+      <div class="w3-container">
+        <h5>Cadena Cereza</h5>
+        <p>Cadena rodio pepitas circón cereza</p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-bottom">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_9381.jpg" alt="Pulsera de Plata">
+      <div class="w3-container">
+        <h5>Cadena Cereza</h5>
+        <p>Cadena rodio pepitas circón cereza</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALERÍA: RELOJES -->
+<div id="relojes" class="w3-row-padding w3-margin-top">
+  <h2 class="w3-center">NEW</h2>
+  <div class="w3-third w3-container w3-margin-bottom w3-animate-right">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_1634.jpg" alt="Reloj de Oro Rosa">
+      <div class="w3-container">
+        <h5>PANDORA</h5>
+        <p>Charms y pulseras </p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-right">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_1634.jpg" alt="Reloj de Oro Rosa">
+      <div class="w3-container">
+        <h5>PANDORA</h5>
+        <p>Charms y pulseras </p>
+      </div>
+    </div>
+  </div>
+	<div class="w3-third w3-container w3-margin-bottom w3-animate-right">
+    <div class="w3-card-4 jewelry-card">
+      <img src="recursos imagenes/IMG_1634.jpg" alt="Reloj de Oro Rosa">
+      <div class="w3-container">
+        <h5>PANDORA</h5>
+        <p>Charms y pulseras </p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+
+<!-- PIE DE PÁGINA -->
+<footer class="w3-center w3-black w3-padding-24">
+  <p>© 2025 Joyas Elegantes | Diseñado con <a href="https://www.w3schools.com/w3css/" target="_blank">W3.CSS</a></p>
+</footer>
+
+<!-- SCRIPT: Carrusel -->
+<script>
+  let slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    let i;
+    const x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+
+  // Auto avance cada 5 segundos
+  setInterval(() => { plusDivs(1); }, 5000);
+</script>
+
+</body>
+</html>
+
+
